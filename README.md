@@ -1,2 +1,9 @@
 # euevew.github.io
-my leanring notes
+my learning notes
+
+- ethereum
+- zero-knowledge proof
+- DeFi
+
+- book notes
+- travel notes
