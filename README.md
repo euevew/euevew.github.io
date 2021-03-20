@@ -1,9 +1,10 @@
-# euevew.github.io
+# Notes for euevew
 my learning notes
 
-- ethereum
-- zero-knowledge proof
-- DeFi
-
-- book notes
-- travel notes
+## Contents
+- **tech**
+    - ethereum
+    - zero-knowledge proof
+    - DeFi
+- **book notes**
+- **nonsense**
