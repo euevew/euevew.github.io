@@ -1,10 +1,11 @@
-# Notes for euevew
+# Notes from euevew
 my learning notes
 
 ## Contents
-- **tech**
-    - ethereum
+- **blockchain**
+    - go-ethereum
     - zero-knowledge proof
     - DeFi
-- **book notes**
+    - Layer2
+- **reading notes**
 - **nonsense**
