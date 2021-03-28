@@ -25,6 +25,7 @@ Uniswap V2的合约分成两部分：Core 和 Periphery。
     Core为合约的核心部分，为与Uniswap进行交互的所有各方提供了基本的安全保证。核心部分由一个工厂（Factory）合约和多个交易对（Pairs）合约组成。
     
     - Factory 合约
+    
         Factory 合约用于创建交易对及对交易对和手续费管理
         
         ```js
@@ -51,6 +52,7 @@ Uniswap V2的合约分成两部分：Core 和 Periphery。
         ```
 
     - Pairs 合约
+    
         交易对合约
         
         ```js
@@ -58,7 +60,6 @@ Uniswap V2的合约分成两部分：Core 和 Periphery。
             // erc20 接口和事件
             event Approval(address indexed owner, address indexed spender, uint value);
             event Transfer(address indexed from, address indexed to, uint value);
-
             function name() external pure returns (string memory);
             function symbol() external pure returns (string memory);
             function decimals() external pure returns (uint8);
@@ -88,7 +89,6 @@ Uniswap V2的合约分成两部分：Core 和 Periphery。
                 address indexed to
             );
             event Sync(uint112 reserve0, uint112 reserve1);
-         
             function MINIMUM_LIQUIDITY() external pure returns (uint);
             // Factory 合约地址
             function factory() external view returns (address);
@@ -102,7 +102,6 @@ Uniswap V2的合约分成两部分：Core 和 Periphery。
             function price1CumulativeLast() external view returns (uint);
             // 获取最新的 k 值
             function kLast() external view returns (uint);
-
             // 铸币
             function mint(address to) external returns (uint liquidity);
             // 烧币
