@@ -1,5 +1,5 @@
 # Notes from euevew
-my learning notes
+[my learning notes](https://euevew.github.io/)
 
 ## Contents
 - **blockchain**
