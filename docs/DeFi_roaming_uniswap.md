@@ -20,36 +20,39 @@ Uniswap中有几个关键角色和关键词：
 
 ### 合约分析
 Uniswap V2的合约分成两部分：Core 和 Periphery。
+
 - 核心（Core）模板
     Core为合约的核心部分，为与Uniswap进行交互的所有各方提供了基本的安全保证。核心部分由一个工厂（Factory）合约和多个交易对（Pairs）合约组成。
     
     - Factory 合约
         Factory 合约用于创建交易对及对交易对和手续费管理
+        
         ```js
         interface IUniswapV2Factory {
-        // 创建交易对的事件
-        event PairCreated(address indexed token0, address indexed token1, address pair, uint);
-        // 读取收取手续费地址
-        function feeTo() external view returns (address);
-        // 读取可手续费收款地址设置的账户
-        function feeToSetter() external view returns (address);
-        // 获取指定两个token的交易对
-        function getPair(address tokenA, address tokenB) external view returns (address pair);
-        // 获取所有交易对
-        function allPairs(uint) external view returns (address pair);
-        // 获取交易对数量
-        function allPairsLength() external view returns (uint);
-
-        // 创建交易对
-        function createPair(address tokenA, address tokenB) external returns (address pair);
-        // 设置手续费收款地址
-        function setFeeTo(address) external;
-        // 设置手续费收款地址的设置地址
-        function setFeeToSetter(address) external;
-    }
+            // 创建交易对的事件
+            event PairCreated(address indexed token0, address indexed token1, address pair, uint);
+            // 读取收取手续费地址
+            function feeTo() external view returns (address);
+            // 读取可手续费收款地址设置的账户
+            function feeToSetter() external view returns (address);
+            // 获取指定两个token的交易对
+            function getPair(address tokenA, address tokenB) external view returns (address pair);
+            // 获取所有交易对
+            function allPairs(uint) external view returns (address pair);
+            // 获取交易对数量
+            function allPairsLength() external view returns (uint);
+            // 创建交易对
+            function createPair(address tokenA, address tokenB) external returns (address pair);
+            // 设置手续费收款地址
+            function setFeeTo(address) external;
+            // 设置手续费收款地址的设置地址
+            function setFeeToSetter(address) external;
+        }
+        ```
 
     - Pairs 合约
         交易对合约
+        
         ```js
         interface IUniswapV2Pair {
             // erc20 接口和事件
@@ -113,6 +116,7 @@ Uniswap V2的合约分成两部分：Core 和 Periphery。
             // 初始化
             function initialize(address, address) external;
         }
+        ```
 
 - 外围（Periphery）模板
     Periphery 为处理外围工作的合约，它要与Core部分交互。
