@@ -220,7 +220,6 @@ Uniswap V2的合约分成两部分：Core 和 Periphery。
                 external
                 payable
                 returns (uint[] memory amounts);
-
             function quote(uint amountA, uint reserveA, uint reserveB) external pure returns (uint amountB);
             // 获取兑换出来的 Token 数量
             function getAmountOut(uint amountIn, uint reserveIn, uint reserveOut) external pure returns (uint amountOut);
