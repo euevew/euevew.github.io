@@ -6,7 +6,7 @@
 
 ### TODO List
 
-0. Layer2 - zkSync 代码分析
-1. DeFi - Compound
+0. Layer2 - zkSync, AZTEC, Loopring
+1. DeFi - Compound, Curve, MakerDAO, Bancor, YFI
 2. go-ethereum evm 指令分析
 3. solidity 学习笔记
