@@ -1,4 +1,4 @@
-# go-ethereum 代码学习笔记（一）——模块 ethdb 分析
+# go-ethereum 代码学习笔记（二）——模块 ethdb 分析
 
 Ethdb 模块定义了以太坊数据存储接口，共不到1000行的代码。
 
