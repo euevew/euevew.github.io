@@ -7,5 +7,6 @@
     - zero-knowledge proof
     - DeFi
     - Layer2
+    - Data Analysis
 - **reading notes**
 - **nonsense**
