@@ -3,7 +3,7 @@
 很久之前，想给自己开辟一片空间，记录学习的内容，将平时看得东西逐渐形成积累和知识结构。但尝试过很多次，也找过很多形式，但都没坚持下来，这一次决定以github博客的方式来记录，希望可以坚持下去。
 
 1. [DeFi 漫游笔记（一） —— uniswap 的简洁力量](./DeFi_roaming_uniswap.md)
-2. [zkRollup 第一站——读 zkSync](./Introducing_zkSync.md)
+2. [zkRollup 第一站——读 zkSync](./articles_zksync.md)
 3. [zkRollup 第一站——zkSync 合约代码](./zksync_code_1.md)
 4. [go-ethereum 代码学习笔记（一）——整体结构](./ethereum_code_1.md)
 5. [go-ethereum 代码学习笔记（二）——模块 ethdb 分析](./ethereum_code_2.md)
